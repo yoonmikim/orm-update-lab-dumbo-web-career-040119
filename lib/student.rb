@@ -67,6 +67,7 @@ class Student
   end
   
   def update 
+    SELECT
   end
   
 end
