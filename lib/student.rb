@@ -67,7 +67,7 @@ class Student
   end
   
   def update 
-    sql = "SELECT * FROM students
+    sql = "SELECT * FROM students WHERE 
   end
   
 end
