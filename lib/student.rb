@@ -67,7 +67,7 @@ class Student
   end
   
   def update 
-    SELECT
+    sql = SELECT
   end
   
 end
