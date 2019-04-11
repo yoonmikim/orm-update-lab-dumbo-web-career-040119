@@ -46,7 +46,15 @@ class Student
   def self.create(name:, grade:)
     student = Student.new(name, grade)
     student.save
-  end 
+    student
+  end
   
+  def self.new_from_db
+    
+  end
+  
+  def self.find_by_name 
+    
+  end
   
 end
