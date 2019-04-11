@@ -67,7 +67,7 @@ class Student
   end
   
   def update 
-    sql = "SELECT * FROM students WHERE name = ?, grade = ?, id = ?"
+    sql = "SELECT * FROM students SET name = ?, grade = ?, WHERE id = ?"
     result = DB[:conn].execute(sql, name)[0]
     Student.new(result[0], result[1], result[2])
   end
