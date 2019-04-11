@@ -31,12 +31,16 @@ class Student
   end
   
   def save 
+    if id 
+      .update
+    else
     sql = <<-SQL
       INSERT INTO students (name, grade)
       VALUES (?, ?)
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
     @id = DB[:conn].execute(sql, "SELECT FROM last_insert_rowid() FROM students")[0][0]
+    end
   end 
   
   def self.create(name:, grade:)
