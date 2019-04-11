@@ -68,7 +68,7 @@ class Student
   
   def update 
     sql = "SELECT * FROM students WHERE name = ?"
-    result = 
+    result = DB[:conn]
   end
   
 end
